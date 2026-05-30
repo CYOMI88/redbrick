@@ -1,0 +1,23 @@
+# RedBrick 配置文件
+# 复制为 config.yaml 并修改路径
+
+# XHS-Downloader API 地址
+xhs_api: "http://127.0.0.1:5556/xhs/detail"
+
+# 输出目录
+output_dir: "./posts"
+
+# 临时下载目录（处理完成后自动清理）
+download_dir: "./downloads"
+
+# Tesseract OCR（可选，不填则跳过图片OCR）
+tesseract:
+  bin: "~/tesseract/tesseract"
+  tessdata: "~/tesseract/tessdata"
+  lang: "chi_sim"
+
+# faster-whisper（可选，不填则跳过视频转录）
+whisper:
+  model: "medium"
+  device: "cpu"
+  compute_type: "int8"

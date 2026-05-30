@@ -1,0 +1,11 @@
+*.pyc
+__pycache__/
+posts/
+downloads/
+config.yaml
+.DS_Store
+*.mp4
+*.jpeg
+*.jpg
+*.png
+*.webp
