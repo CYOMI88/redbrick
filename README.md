@@ -5,6 +5,8 @@
 [![Platform](https://img.shields.io/badge/platform-linux%20%7C%20macOS%20%7C%20arm64-lightgrey)]()
 [![Status](https://img.shields.io/badge/status-stable-brightgreen)]()
 
+RedBrick is an open-source pipeline for extracting content from Xiaohongshu (小红书) share links. It extracts text, performs OCR on images, transcribes video via faster-whisper, and outputs structured JSON ready for any LLM — no login required, fully local, ARM-friendly.
+
 小红书分享链接 → 提取正文 / OCR 图片 / 转录视频 → 结构化 JSON 输出，喂给任意 LLM 提炼知识点。
 
 **零登录、纯本地、全部免费。**
@@ -34,7 +36,7 @@ python main.py api   # 默认 http://127.0.0.1:5556
 ### 安装 RedBrick
 
 ```bash
-git clone https://github.com/CYOMI88/redbrick.git && cd redbrick
+git clone https://github.com/MagNorns/redbrick.git && cd redbrick
 bash install.sh           # 装 Tesseract + Python 依赖
 cp config.yaml.example config.yaml   # 改一下路径
 ```
